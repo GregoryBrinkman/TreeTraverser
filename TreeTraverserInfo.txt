@@ -1,0 +1,35 @@
+-- Extra Weekly Challenge --
+
+Your challenge is to write a binary-tree traverser & pretty-printer.  
+This challenge is split between two equal-value components: 1) Traverse 2) Pretty Print
+
+Your binary tree will be stored as an int array.  It will be 8 levels 
+deep, and so it will have 255 nodes.  
+The first node will be 1, and its two children 2 & 3.  2's left-child is 4 and 3's left child is 6.  Etc . . .
+
+1) Traverser:  Start at root node #1.  
+Your program will take simple commands from the command-line, and print out a response. (Hint: Scanner might come in handy)
+
+Each command moves the current location to a node, and prints out the value of that node. 
+You must implement at least the following commands:
+
+l : move to & print left child
+
+r : move to & print right child
+
+p : move to & print parent 
+
+s : move to & print sibling (watch out for being on the edge of the tree!)
+
+t : stay at current node, but print every element rooted at that node in level-order 
+
+q : quit the program
+
+Your program should not throw any exceptions.
+
+2) Pretty-print:  This will print out the contents of the tree in a tree like shape on the console.  
+The challenge is to handle symmetric white-space for printing a binary tree of arbitrary height. 
+Note: your code only needs to be able handle the case of perfect binary trees (with nodes = 2^height  - 1).
+
+If you program the traverser, then the 't' command will give a pretty-print of the tree rooted at the current node.  
+Otherwise, write a main method to display pretty-printed trees at heights 4, 5, and 6. 
